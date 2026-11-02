@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 5</title>
+    <style> 
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+   :root{
+        --primary-color:pink;
+        --secondary-color: blue;
+    }
+    div{
+        width: 100vw;
+        height: 100vh;
+        display: flex
+    }
+        div section:first-child{
+         background-color: var(--primary-color);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+        }
+        div section:last-child{
+            background-color: var(--secondary-color);
+            display:flex;
+            justify-content: end;
+            align-items: flex-end;
+        }
+        section{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <section>
+            <p>hola</p>
+        </section>
+        <section>
+            <p>adios</p>
+        </section>
+    </div>
+</body>
+</html>
